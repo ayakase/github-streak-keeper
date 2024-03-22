@@ -14,7 +14,7 @@ cron.schedule('*/10 * * * * *', () => {
         console.log('Execute');
         setTimeout(() => {
             executeCommit()
-        }, 2000);
+        }, 1000);
         console.log(stdout);
         if (stderr) {
             console.error(stderr);
