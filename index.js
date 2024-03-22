@@ -4,7 +4,7 @@ const commit = `git commit -m "commit"`
 const push = `git push`
 var cron = require('node-cron');
 
-cron.schedule('*/10 * * * * *', () => {
+cron.schedule('*/120 * * * * *', () => {
     const command = 'echo "pushed at $(date)" >> log.txt'
     exec(command, (error, stdout, stderr) => {
         if (error) {
